@@ -1,0 +1,149 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(rgba(1, 156, 218, 0.8), rgba(72, 92, 72, 0.5)), url('../images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+h1 { color: #333; }
+form input, form button { margin: 10px 0; display: block; }
+.container{
+    max-width: 900px;
+    background-color: white;
+    min-height: 400px;
+    margin: 5rem auto;
+    padding: 2rem;
+    border: solid 1rem #eee;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+a{
+    text-decoration: none;
+}
+
+header{
+    min-height: 60px;
+    background-color: rgb(1, 132, 184);
+    border-bottom: solid 2px white;
+    border-top: solid 20px rgb(2, 107, 148);
+}
+/* =============== table ============== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+}
+
+table th {
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: left;
+}
+
+table td, table th {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+table tr:hover {
+    background-color: #f9f9f9;
+}
+/* ===========bottom =============== */
+.btn-add{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(1, 132, 184);
+    padding: 0.5rem;
+    flex: 1;
+}
+.btn-submit{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(1, 132, 184);
+    padding: 0.8rem ;
+    border: solid 1px rgb(2, 107, 148);
+    font-size: 1rem;
+    flex: 1;
+    cursor: pointer;
+}
+.btn-cancel{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(184, 59, 1);
+    padding: 0.8rem;
+    border: solid 1px rgb(184, 59, 1);
+    font-size: 1rem;
+    flex: 1;
+    cursor: pointer;
+}
+.btn-submit:hover {
+    background-color: rgb(0, 102, 143);
+}
+
+.btn-cancel:hover {
+    background-color: rgb(143, 40, 0);
+}
+
+.btn-add:hover {
+    background-color: rgb(0, 102, 143);
+}
+/* ===================================== */
+form input[type="text"],
+form input[type="number"] {
+    padding: 0.8rem;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+form input:focus {
+    border-color: rgb(1, 132, 184);
+    outline: none;
+    box-shadow: 0 0 5px rgba(1, 132, 184, 0.5);
+}
+/* ===================================== */
+.gr-btn{
+    display: flex;
+    gap:5px;
+    width:13rem
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+        margin: 2rem 1rem;
+    }
+
+    .gr-btn {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    table, tr, th, td {
+        display: block;
+        width: 100%;
+    }
+
+    table th, table td {
+        text-align: left;
+    }
+
+    .btn-add {
+        display: inline-block;
+        margin-top: 1rem;
+    }
+}
+
